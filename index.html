@@ -88,7 +88,7 @@
         border-radius: 12px;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 4rem;
       }
 
       .challenge {
@@ -97,9 +97,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         text-align: center;
-        padding: 1rem;
-        border: 2px solid #888;
+        padding: 2rem;
         border-radius: 12px;
+        border: 2px solid #ddd;
       }
 
       .challenge h2 {
@@ -116,11 +116,11 @@
       .challenge-img {
         width: 100%;
         margin: 0 auto;
-        transition: all 0.5s;
+        transition: all 0.5s ease-in-out;
       }
 
       .challenge-img:hover {
-        transform: scale(1.5);
+        transform: scale(2);
       }
     </style>
   </head>
@@ -135,8 +135,9 @@
             <h2>QR code component</h2>
             <div class="img-box">
               <img
+                alt="QR code design preview"
                 class="challenge-img"
-                src="https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/cybxdhr4wewlscvco9dd.jpg"
+                src="qr-code-component-main/design/desktop-preview.jpg"
               />
             </div>
             <a
@@ -162,8 +163,9 @@
             <h2>Results summary component</h2>
             <div class="img-box">
               <img
+                alt="Results summary design preview"
                 class="challenge-img"
-                src="https://res.cloudinary.com/dz209s6jk/image/upload/v1676651421/Challenges/xals0mqfmph6kcspsezk.jpg"
+                src="results-summary-component-main/design/desktop-preview.jpg"
               />
             </div>
             <a
