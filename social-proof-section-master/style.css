@@ -20,18 +20,14 @@ body {
 }
 
 main {
-  background-color: lightblue;
-  padding: 10rem 20rem;
+  padding: 12rem 20rem;
   max-width: 144rem;
-  height: 80rem;
-  position: relative;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.bg-top,
-.bg-bot {
-  display: none;
+.bg-desktop {
   position: absolute;
   z-index: -1;
 }
@@ -52,7 +48,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
 }
 
 .hero-text {
@@ -115,5 +110,119 @@ main {
 /* Testimonials section */
 
 .testimonials {
-  background-color: lightcoral;
+  display: grid;
+  grid-template-columns: repeat(3, 33.5rem);
+  grid-template-rows: 20rem;
+  gap: 2rem;
+  padding-top: 6rem;
+}
+
+.testimonial {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 8px;
+  display: flex;
+  padding: 2rem 3.5rem;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 20rem;
+}
+
+.testimonial-customer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.customer-img {
+  border-radius: 50%;
+  width: 3.2rem;
+}
+
+.customer-name,
+.customer-title {
+  font-weight: 500;
+  padding: 0.1rem;
+}
+
+.customer-name {
+  color: hsl(300, 24%, 96%);
+}
+.customer-title {
+  color: hsl(333, 80%, 67%);
+}
+.customer-text {
+  color: hsl(300, 24%, 96%);
+  padding-top: 2rem;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.testimonial:nth-child(2) {
+  margin-top: 2rem;
+}
+
+.testimonial:last-child {
+  margin-top: 4rem;
+}
+
+/* Change at 1104px */
+@media (max-width: 69rem) {
+  .bg-desktop {
+    display: none;
+  }
+
+  body {
+    align-items: flex-start;
+  }
+
+  main {
+    max-width: 37.5rem;
+    flex-direction: column;
+    position: relative;
+    padding: 5rem 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0;
+  }
+
+  .hero-text {
+    flex: 0;
+    text-align: center;
+  }
+
+  .hero-ratings {
+    flex: 0;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .hero-rating {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.6rem 5rem;
+    gap: 2rem;
+    background-color: hsl(300, 24%, 96%);
+  }
+
+  .hero-rating p {
+    padding: 0;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .testimonial:nth-child(2),
+  .testimonial:last-child {
+    margin: 0;
+  }
 }
