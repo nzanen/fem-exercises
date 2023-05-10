@@ -4,10 +4,8 @@
   box-sizing: border-box;
 }
 
-/* 10px = 1rem */
-
 html {
-  font-size: 62.5%;
+  font-size: 80%;
 }
 
 body {
