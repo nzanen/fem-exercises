@@ -32,6 +32,10 @@ main {
   z-index: -1;
 }
 
+.bg-mobile {
+  display: none;
+}
+
 .bg-top {
   top: 0;
   left: 0;
@@ -170,6 +174,12 @@ main {
 @media (max-width: 69rem) {
   .bg-desktop {
     display: none;
+  }
+
+  .bg-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
   }
 
   body {
