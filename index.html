@@ -8,10 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
     <style>
       * {
@@ -42,13 +39,16 @@
       }
 
       .container {
-        max-width: 140rem;
+        max-width: 101rem;
         background-color: #fff;
         margin-top: 3.2rem;
         padding: 3.2rem;
         border-radius: 12px;
         gap: 4rem;
         box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       header {
@@ -81,13 +81,20 @@
 
       /* Challenges */
 
-      .challenges {
+      /* .challenges {
         width: 100%;
         margin: 0 auto;
         border-radius: 12px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 4rem;
+      } */
+
+      .challenges {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
       }
 
       .challenge {
@@ -118,6 +125,17 @@
         margin: 0 auto;
         transition: all 0.5s ease-in-out;
       }
+
+      @media (max-width: 1000px) {
+        .container {
+          max-width: 69rem;
+        }
+      }
+      @media (max-width: 700px) {
+        .container {
+          max-width: 35rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -130,30 +148,11 @@
           <div class="challenge">
             <h2>QR code component</h2>
             <div class="img-box">
-              <img
-                alt="QR code design preview"
-                class="challenge-img"
-                src="qr-code-component-main/design/desktop-preview.jpg"
-              />
+              <img alt="QR code design preview" class="challenge-img" src="qr-code-component-main/design/desktop-preview.jpg" />
             </div>
-            <a
-              class="link"
-              target="_blank"
-              href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
-              >Challenge</a
-            >
-            <a
-              class="link"
-              target="_blank"
-              href="https://nzanen.github.io/fem-exercises/qr-code-component-main/"
-              >Solution</a
-            >
-            <a
-              class="link"
-              target="_blank"
-              href="https://github.com/nzanen/fem-exercises/tree/main/qr-code-component-main"
-              >Code</a
-            >
+            <a class="link" target="_blank" href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H">Challenge</a>
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/qr-code-component-main/">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/qr-code-component-main">Code</a>
           </div>
           <div class="challenge">
             <h2>Results summary component</h2>
@@ -164,52 +163,20 @@
                 src="results-summary-component-main/design/desktop-preview.jpg"
               />
             </div>
-            <a
-              class="link"
-              target="_blank"
-              href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+            <a class="link" target="_blank" href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
               >Challenge</a
             >
-            <a
-              class="link"
-              target="_blank"
-              href="https://nzanen.github.io/fem-exercises/results-summary-component-main"
-              >Solution</a
-            >
-            <a
-              class="link"
-              target="_blank"
-              href="https://github.com/nzanen/fem-exercises/tree/main/results-summary-component-main"
-              >Code</a
-            >
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/results-summary-component-main">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/results-summary-component-main">Code</a>
           </div>
           <div class="challenge">
             <h2>Social proof section</h2>
             <div class="img-box">
-              <img
-                alt="Social proof section preview"
-                class="challenge-img"
-                src="social-proof-section-master/design/desktop-preview.jpg"
-              />
+              <img alt="Social proof section preview" class="challenge-img" src="social-proof-section-master/design/desktop-preview.jpg" />
             </div>
-            <a
-              class="link"
-              target="_blank"
-              href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA"
-              >Challenge</a
-            >
-            <a
-              class="link"
-              target="_blank"
-              href="https://nzanen.github.io/fem-exercises/social-proof-section-master"
-              >Solution</a
-            >
-            <a
-              class="link"
-              target="_blank"
-              href="https://github.com/nzanen/fem-exercises/tree/main/social-proof-section-master"
-              >Code</a
-            >
+            <a class="link" target="_blank" href="https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA">Challenge</a>
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/social-proof-section-master">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/social-proof-section-master">Code</a>
           </div>
           <div class="challenge">
             <h2>Four card feature</h2>
@@ -220,22 +187,46 @@
                 src="four-card-feature-section-master/design/desktop-preview.jpg"
               />
             </div>
+            <a class="link" target="_blank" href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK">Challenge</a>
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/four-card-feature-section-master">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/four-card-feature-section-master"
+              >Code</a
+            >
+          </div>
+          <div class="challenge">
+            <h2>Simple Price Grid</h2>
+            <div class="img-box">
+              <img
+                alt="Four card feature preview"
+                class="challenge-img"
+                src="single-price-grid-component-master/design/desktop-preview.jpg"
+              />
+            </div>
             <a
               class="link"
               target="_blank"
-              href="https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK"
+              href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc"
               >Challenge</a
             >
-            <a
-              class="link"
-              target="_blank"
-              href="https://nzanen.github.io/fem-exercises/four-card-feature-section-master"
-              >Solution</a
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/single-price-grid-component-master">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/single-price-grid-component-master"
+              >Code</a
             >
-            <a
-              class="link"
-              target="_blank"
-              href="https://github.com/nzanen/fem-exercises/tree/main/four-card-feature-section-master"
+          </div>
+          <div class="challenge">
+            <h2>Interactive Rating</h2>
+            <div class="img-box">
+              <img
+                alt="Four card feature preview"
+                class="challenge-img"
+                src="interactive-rating-component-main/design/desktop-preview.jpg"
+              />
+            </div>
+            <a class="link" target="_blank" href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+              >Challenge</a
+            >
+            <a class="link" target="_blank" href="https://nzanen.github.io/fem-exercises/interactive-rating-component-main">Solution</a>
+            <a class="link" target="_blank" href="https://github.com/nzanen/fem-exercises/tree/main/interactive-rating-component-main"
               >Code</a
             >
           </div>
