@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: linear-gradient(#1f2630, #171e26);
+  width: 43rem;
+  height: 43rem;
+  padding: 4.5rem;
+  border-radius: 30px;
+}
+
+.rating-request {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating-thanks {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.star-icon {
+  background-color: #272e38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.7;
+  color: hsl(216, 12%, 54%);
+  margin-bottom: 2rem;
+}
+
+.ratings-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.rating {
+  background-color: #262f38;
+  color: hsl(216, 12%, 54%);
+  font-weight: 700;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.rating-selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn {
+  background-color: hsl(25, 97%, 53%);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
+
+.rating-result {
+  background-color: #273039;
+  color: hsl(25, 97%, 53%);
+  padding: 1rem 3rem;
+  border-radius: 50px;
+}
+
+.h1-thanks {
+  margin-bottom: -2rem;
+}
