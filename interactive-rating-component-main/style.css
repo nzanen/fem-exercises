@@ -94,6 +94,7 @@ p {
   color: hsl(0, 0%, 100%);
 }
 
+.rating:active,
 .rating-selected {
   background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
