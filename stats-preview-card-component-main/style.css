@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 4rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  background-color: hsl(244, 38%, 16%);
+  width: 1080px;
+  height: 446px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.text-container {
+  width: 100%;
+  height: 100%;
+  padding: 6rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  max-width: 18ch;
+  font-size: 3.5rem;
+}
+
+.title span {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  max-width: 40ch;
+  line-height: 1.7;
+}
+
+.stats {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-text {
+  font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(87, 22, 127, 0.6), rgba(87, 22, 127, 0.6)), url('images/image-header-desktop.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column-reverse;
+    max-width: 40rem;
+    height: 96rem;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-container {
+    text-align: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+  }
+
+  .title {
+    max-width: 15ch;
+    font-size: 3rem;
+  }
+
+  .description {
+    max-width: 28ch;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
