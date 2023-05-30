@@ -2,7 +2,7 @@
 
 // DOM ELEMENTS
 const ratingRequestEl = document.querySelector('.rating-request');
-const ratingThanksEl = document.querySelector('.rating-thanks');
+const ratingCompletedEl = document.querySelector('.rating-completed');
 const btn = document.querySelector('.btn');
 const ratingEl = document.querySelectorAll('.rating');
 const resultNumberEl = document.querySelector('.result-number');
@@ -27,6 +27,6 @@ btn.addEventListener('click', () => {
     alert('Please select a score');
   } else {
     ratingRequestEl.classList.toggle('hidden');
-    ratingThanksEl.classList.toggle('hidden');
+    ratingCompletedEl.classList.toggle('hidden');
   }
 });
